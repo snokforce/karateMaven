@@ -1,22 +1,12 @@
-Feature: load testing
+Feature: My API Load Test
 
-  Background:
-    * url 'https://jsonplaceholder.typicode.com'
+#  Background:
+#    * url 'https://jsonplaceholder.typicode.com'
 
-  Scenario: get users
-    Given path 'users'
+  Scenario: Get user data
+    Given url "https://jsonplaceholder.typicode.com/users"
     When method get
     Then status 200
-
-#  Scenario: get posts
-#    Given path 'posts'
-#    When method get
-#    Then status 200
-#
-#  Scenario: get comments
-#    Given path 'comments'
-#    When method get
-#    Then status 200
 
 
 #Feature: sample karate test script
